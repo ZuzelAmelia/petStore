@@ -1,0 +1,3005 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 42,
+        "name": "Add a new pet into the store SUCCESSFULLY",
+        "description": "",
+        "id": "add-a-new-pet;add-a-new-pet-into-the-store-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 720997100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2895600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50385400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2818400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1829600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 13,
+              "value": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"Pitufo\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"pending\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 580300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1311511900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4742300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the status code should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 301516300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the response json path \"id\" should be a valid id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBeAValidId(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9860200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json path \"name\" should be \"Pitufo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 24
+                },
+                {
+                  "val": "Pitufo",
+                  "offset": 41
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 457931800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the pet should be available in the store",
+            "match": {
+              "location": "PetStepDefs.thePetShouldBeAvailableInTheStore()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Add a new pet into the store SUCCESSFULLY",
+        "description": "",
+        "id": "add-a-new-pet;add-a-new-pet-into-the-store-successfully;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8290000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1153300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1360600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1508800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1020900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 13,
+              "value": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"Pluto\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 943900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 413576800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3089000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the status code should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30797800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the response json path \"id\" should be a valid id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBeAValidId(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14371200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json path \"name\" should be \"Pluto\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 24
+                },
+                {
+                  "val": "Pluto",
+                  "offset": 41
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 496181200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the pet should be available in the store",
+            "match": {
+              "location": "PetStepDefs.thePetShouldBeAvailableInTheStore()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Add a new pet into the store SUCCESSFULLY",
+        "description": "",
+        "id": "add-a-new-pet;add-a-new-pet-into-the-store-successfully;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14588200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2123700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2530200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2392900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1822100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 13,
+              "value": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"Vera\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"sold\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1781700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 456912800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1813500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the status code should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26910000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the response json path \"id\" should be a valid id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBeAValidId(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25001500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json path \"name\" should be \"Vera\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 24
+                },
+                {
+                  "val": "Vera",
+                  "offset": 41
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 436427100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the pet should be available in the store",
+            "match": {
+              "location": "PetStepDefs.thePetShouldBeAvailableInTheStore()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Add a new pet into the store SUCCESSFULLY",
+        "description": "",
+        "id": "add-a-new-pet;add-a-new-pet-into-the-store-successfully;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10662000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2458000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2693500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3474200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2685700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 13,
+              "value": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"pending\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1045700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 378496300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 443000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the status code should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6477300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the response json path \"id\" should be a valid id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBeAValidId(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6515600,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json path \"name\" should be \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 24
+                },
+                {
+                  "val": "",
+                  "offset": 41
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 387091100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the pet should be available in the store",
+            "match": {
+              "location": "PetStepDefs.thePetShouldBeAvailableInTheStore()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Add a new pet into the store SUCCESSFULLY",
+        "description": "",
+        "id": "add-a-new-pet;add-a-new-pet-into-the-store-successfully;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13773300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1444800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1979600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2153100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1741000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 13,
+              "value": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"00\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1557100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 408703300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2448600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the status code should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29095700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the response json path \"id\" should be a valid id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBeAValidId(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17727300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json path \"name\" should be \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 24
+                },
+                {
+                  "val": "",
+                  "offset": 41
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 398663200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the pet should be available in the store",
+            "match": {
+              "location": "PetStepDefs.thePetShouldBeAvailableInTheStore()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Add a new pet into the store SUCCESSFULLY",
+        "description": "",
+        "id": "add-a-new-pet;add-a-new-pet-into-the-store-successfully;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10530800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1322500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1620600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1850600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1308800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 13,
+              "value": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"989000000000000000000000000\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1902600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 421615100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1931300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the status code should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34745900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the response json path \"id\" should be a valid id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBeAValidId(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12883200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json path \"name\" should be \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 24
+                },
+                {
+                  "val": "",
+                  "offset": 41
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 388565300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the pet should be available in the store",
+            "match": {
+              "location": "PetStepDefs.thePetShouldBeAvailableInTheStore()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "Add a new pet into the store SUCCESSFULLY",
+        "description": "",
+        "id": "add-a-new-pet;add-a-new-pet-into-the-store-successfully;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10948800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1264000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1604100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1708200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1384700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 13,
+              "value": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula orci massa, eget pulvinar lacus euismod eu. Nam orci tortor, accumsan sit amet semper semper, commodo vitae risus. Etiam nec turpis vitae sapien ultrices malesuada. Aliquam ullamcorper, tellus at mollis elementum, augue tortor porta lorem, in gravida quam nunc vitae lectus. Maecenas finibus vestibulum orci, vitae sodales nibh. Vestibulum a sagittis massa, vel efficitur erat. Nam vel facilisis risus. Aliquam ut quam non turpis luctus condimentum. Curabitur cursus nulla in scelerisque volutpat.\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"sold\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1235700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356996000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1678300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the status code should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25519500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the response json path \"id\" should be a valid id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBeAValidId(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16664900,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json path \"name\" should be \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula orci massa, eget pulvinar lacus euismod eu. Nam orci tortor, accumsan sit amet semper semper, commodo vitae risus. Etiam nec turpis vitae sapien ultrices malesuada. Aliquam ullamcorper, tellus at mollis elementum, augue tortor porta lorem, in gravida quam nunc vitae lectus. Maecenas finibus vestibulum orci, vitae sodales nibh. Vestibulum a sagittis massa, vel efficitur erat. Nam vel facilisis risus. Aliquam ut quam non turpis luctus condimentum. Curabitur cursus nulla in scelerisque volutpat.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 24
+                },
+                {
+                  "val": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula orci massa, eget pulvinar lacus euismod eu. Nam orci tortor, accumsan sit amet semper semper, commodo vitae risus. Etiam nec turpis vitae sapien ultrices malesuada. Aliquam ullamcorper, tellus at mollis elementum, augue tortor porta lorem, in gravida quam nunc vitae lectus. Maecenas finibus vestibulum orci, vitae sodales nibh. Vestibulum a sagittis massa, vel efficitur erat. Nam vel facilisis risus. Aliquam ut quam non turpis luctus condimentum. Curabitur cursus nulla in scelerisque volutpat.",
+                  "offset": 41
+                }
+              ],
+              "location": "PetStepDefs.theResponseJsonPathShouldBe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 381958300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the pet should be available in the store",
+            "match": {
+              "location": "PetStepDefs.thePetShouldBeAvailableInTheStore()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 84,
+        "name": "Try adding a pet with a String as petId, this should throw a 400 error (bad request, the request cannot be fulfilled due to bad syntax)",
+        "description": "",
+        "id": "add-a-new-pet;try-adding-a-pet-with-a-string-as-petid--this-should-throw-a-400-error-(bad-request--the-request-cannot-be-fulfilled-due-to-bad-syntax);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4994200,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 555800,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 853500,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 838200,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 58,
+              "value": "{\n  \"id\": abc,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"Molly\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"pending\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 461000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 360538400,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1553000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "the status code should be a 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      },
+      {
+        "line": 85,
+        "name": "Try adding a pet with a String as petId, this should throw a 400 error (bad request, the request cannot be fulfilled due to bad syntax)",
+        "description": "",
+        "id": "add-a-new-pet;try-adding-a-pet-with-a-string-as-petid--this-should-throw-a-400-error-(bad-request--the-request-cannot-be-fulfilled-due-to-bad-syntax);;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11382500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I set base URL for the request to the petstore",
+            "match": {
+              "location": "PetStepDefs.iSetBaseURLForTheRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1142300,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I set endpoint to \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 19
+                }
+              ],
+              "location": "PetStepDefs.iSetEndpointTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2024900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I set header \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 14
+                },
+                {
+                  "val": "application/json",
+                  "offset": 32
+                }
+              ],
+              "location": "PetStepDefs.iSetHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 929100,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I set second header \"Content-Type\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 21
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetStepDefs.iSetSecondHeaderToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 652200,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I set body with this information:",
+            "match": {
+              "location": "PetStepDefs.iSetBodyWithThisInformation(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 58,
+              "value": "{\n  \"id\": def,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"Molly\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"pending\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 561300,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I set operation request to \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.iSetOperationRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 421713000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I execute the request",
+            "match": {
+              "location": "PetStepDefs.iExecuteTheRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 345100,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "the status code should be a 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefs.theStatusCodeShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddNewPet"
+          }
+        ]
+      }
+    ],
+    "name": "Add a new pet",
+    "description": "  In order to sell a pet\n  As a store owner\n  I want to add a new pet to the catalog",
+    "id": "add-a-new-pet",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/add_a_new_pet.feature",
+    "tags": [
+      {
+        "name": "@AddNewPet",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Search for a pet by id SUCCESSFULLY",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-a-pet-by-id-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5130400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 447500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I set endpoint for  searching \"/pet/1845563262948980307\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/1845563262948980307",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 515700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 374100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 355145400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for the pet id",
+            "match": {
+              "location": "PetSearchForSteps.iSearchForThePetId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1713000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 358729600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should get the pet with the id \"1845563262948980307\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1845563262948980307",
+                  "offset": 34
+                }
+              ],
+              "location": "PetSearchForSteps.iShouldGetThePetWithTheId(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Search for a pet by id SUCCESSFULLY",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-a-pet-by-id-successfully;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3370900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 418500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I set endpoint for  searching \"/pet/1845563262948980308\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/1845563262948980308",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 565400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 459300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 398963000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for the pet id",
+            "match": {
+              "location": "PetSearchForSteps.iSearchForThePetId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1511800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 411790900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should get the pet with the id \"1845563262948980308\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1845563262948980308",
+                  "offset": 34
+                }
+              ],
+              "location": "PetSearchForSteps.iShouldGetThePetWithTheId(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Search for a pet by id UNSUCCESSFULLY, a pet id that doesn\u0027t exits in data base, throw a 404 error (not found)",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-a-pet-by-id-unsuccessfully--a-pet-id-that-doesn-t-exits-in-data-base--throw-a-404-error-(not-found);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3296500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2670400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I set endpoint for  searching \"/pet/-7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/-7",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 698400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 541900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 394064100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I search for the pet id",
+            "match": {
+              "location": "PetSearchForSteps.iSearchForThePetId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1709000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the status code of search request should be a 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Search for a pet by id UNSUCCESSFULLY, a pet id that doesn\u0027t exits in data base, throw a 404 error (not found)",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-a-pet-by-id-unsuccessfully--a-pet-id-that-doesn-t-exits-in-data-base--throw-a-404-error-(not-found);;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9069300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1867600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I set endpoint for  searching \"/pet/-20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/-20",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2363300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 915000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 387708100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I search for the pet id",
+            "match": {
+              "location": "PetSearchForSteps.iSearchForThePetId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the status code of search request should be a 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "Search for many pets by different status SUCCESSFULLY (available,pending, sold)",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-many-pets-by-different-status-successfully-(available-pending--sold);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3538200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 442600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I set endpoint for  searching \"/pet/findByStatus?status\u003davailable\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/findByStatus?status\u003davailable",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 620300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 522000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 382385800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I search for pets with the corresponding status \"available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 49
+                }
+              ],
+              "location": "PetSearchForSteps.iSearchForPetsWithTheCorrespondingStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1266600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Search for many pets by different status SUCCESSFULLY (available,pending, sold)",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-many-pets-by-different-status-successfully-(available-pending--sold);;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9572300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1563100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I set endpoint for  searching \"/pet/findByStatus?status\u003dsold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/findByStatus?status\u003dsold",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 984700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 574300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 377993700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I search for pets with the corresponding status \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 49
+                }
+              ],
+              "location": "PetSearchForSteps.iSearchForPetsWithTheCorrespondingStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1489200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Search for many pets by different status SUCCESSFULLY (available,pending, sold)",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-many-pets-by-different-status-successfully-(available-pending--sold);;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10856900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1208900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I set endpoint for  searching \"/pet/findByStatus?status\u003dpending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/findByStatus?status\u003dpending",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1438800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 991900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 379058100,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I search for pets with the corresponding status \"pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pending",
+                  "offset": 49
+                }
+              ],
+              "location": "PetSearchForSteps.iSearchForPetsWithTheCorrespondingStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1121900,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Search for pets by different status that don\u0027t exist",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-pets-by-different-status-that-don-t-exist;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3438800,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 303800,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I set endpoint for  searching \"/pet/findByStatus?status\u003dblablabla\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/findByStatus?status\u003dblablabla",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 513100,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 322100,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 422259700,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I search for pets with the corresponding status \"blablabla\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "blablabla",
+                  "offset": 49
+                }
+              ],
+              "location": "PetSearchForSteps.iSearchForPetsWithTheCorrespondingStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1138100,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 57,
+        "name": "Search for pets by different status that don\u0027t exist",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-pets-by-different-status-that-don-t-exist;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11398600,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1389700,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I set endpoint for  searching \"/pet/findByStatus?status\u003dabcdefg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/findByStatus?status\u003dabcdefg",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2075600,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1258100,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 376182600,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I search for pets with the corresponding status \"abcdefg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefg",
+                  "offset": 49
+                }
+              ],
+              "location": "PetSearchForSteps.iSearchForPetsWithTheCorrespondingStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1075100,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      },
+      {
+        "line": 58,
+        "name": "Search for pets by different status that don\u0027t exist",
+        "description": "",
+        "id": "search-a-pet-by-different-filters;search-for-pets-by-different-status-that-don-t-exist;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9544000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I set base URL for search request to the petstore",
+            "match": {
+              "location": "PetSearchForSteps.iSetBaseURLForSearchRequestToThePetstore()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1007200,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I set endpoint for  searching \"/pet/findByStatus?status\u003dzxcvbnm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/findByStatus?status\u003dzxcvbnm",
+                  "offset": 31
+                }
+              ],
+              "location": "PetSearchForSteps.iSetEndpointForSearching(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2059800,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I set header for  request \"accept\" to value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "accept",
+                  "offset": 27
+                },
+                {
+                  "val": "application/json",
+                  "offset": 45
+                }
+              ],
+              "location": "PetSearchForSteps.iSetHeaderForRequestToValue(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1826800,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "And  I set operation for searching request to \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 47
+                }
+              ],
+              "location": "PetSearchForSteps.andISetOperationForSearchingRequestTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371872300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I search for pets with the corresponding status \"zxcvbnm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "zxcvbnm",
+                  "offset": 49
+                }
+              ],
+              "location": "PetSearchForSteps.iSearchForPetsWithTheCorrespondingStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1088900,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the status code of search request should be a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "PetSearchForSteps.theStatusCodeOfPostSRequestShouldBeA(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPet"
+          }
+        ]
+      }
+    ],
+    "name": "Search a pet by different filters",
+    "description": "",
+    "id": "search-a-pet-by-different-filters",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/search_pet.feature",
+    "tags": [
+      {
+        "name": "@SearchPet",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
