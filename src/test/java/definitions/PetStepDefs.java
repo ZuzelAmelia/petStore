@@ -31,11 +31,6 @@ public class PetStepDefs {
        petStepsImplementation.setHeaderToValue(headerName, headerValue);
     }
 
-    @And("^I set second header \"([^\"]*)\" to value \"([^\"]*)\"$")
-    public void iSetSecondHeaderToValue(String headerName, String headerValue) throws Throwable {
-        petStepsImplementation.setHeaderToValue(headerName, headerValue);
-    }
-
     @And("^I set body with this information:$")
     public void iSetBodyWithThisInformation(String requestBody) {
         petStepsImplementation.setBody(requestBody);

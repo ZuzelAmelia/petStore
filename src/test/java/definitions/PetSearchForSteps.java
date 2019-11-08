@@ -60,4 +60,15 @@ public class PetSearchForSteps {
     }
 
 
+
+    @Then("^the response for the status \"([^\"]*)\" should be \"([^\"]*)\"$")
+    public void theResponseForTheStatusShouldBe(String status, String jsonEmptyResponse) throws Throwable {
+       petStepsImplementation.checkEmptyResponse(status, jsonEmptyResponse);
+    }
+
+    @And("^I see only the pets with the status \"([^\"]*)\"$")
+    public void iSeeOnlyThePetsWithTheStatus(String arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 }
