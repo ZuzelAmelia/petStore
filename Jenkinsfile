@@ -1,9 +1,6 @@
 pipeline {
     agent any
-    environment {
-        CI = 'true'
-    }
-    stages {
+       stages {
         stage('Compile and Execute') {
             steps {
                     sh 'chmod +x ./gradlew'
