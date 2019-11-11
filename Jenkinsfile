@@ -10,7 +10,6 @@ pipeline {
                     sh './gradlew clean test'
                 }
             }
-        }
         stage('Create Reports') {
             steps {
                 sh './gradlew aggregate'
