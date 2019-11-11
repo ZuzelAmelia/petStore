@@ -42,7 +42,7 @@ Feature: Add a new pet
       | Pitufo      | pending       |
       | Pluto       | available     |
       | Vera        | sold          |
-      |             | pending       |
+      |  Gala       | pending       |
       |             | 00            |
       |             | 989000000000000000000000000            |
       | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula orci massa, eget pulvinar lacus euismod eu. Nam orci tortor, accumsan sit amet semper semper, commodo vitae risus. Etiam nec turpis vitae sapien ultrices malesuada. Aliquam ullamcorper, tellus at mollis elementum, augue tortor porta lorem, in gravida quam nunc vitae lectus. Maecenas finibus vestibulum orci, vitae sodales nibh. Vestibulum a sagittis massa, vel efficitur erat. Nam vel facilisis risus. Aliquam ut quam non turpis luctus condimentum. Curabitur cursus nulla in scelerisque volutpat.       | sold          |
