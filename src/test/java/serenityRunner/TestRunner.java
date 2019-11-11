@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = {"src/test/resources/features/add_a_new_pet.feature", "src/test/resources/features/search_pet.feature" },
+        features = {"src/test/resources/features"},
         plugin = {"pretty", "html:target/cucumber", "json:target/cucumber-report.json"},
         glue = "definitions"
 )

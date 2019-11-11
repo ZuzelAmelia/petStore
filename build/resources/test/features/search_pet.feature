@@ -43,16 +43,16 @@ Feature: Search a pet by different filters
       |  sold     |
       |  pending    |
 
-  Scenario Outline: Search for pets by different status that don't exist
+  Scenario Outline: Search for pets by status that doesn't exist, the code response is 200 but the response content is empty "[]"
     Given I set base URL for search request to the petstore
     And   I set endpoint for  searching "/pet/findByStatus?status=<status>"
     And   I set header for  request "accept" to value "application/json"
     And   And  I set operation for searching request to "GET"
     When  I search for pets with the corresponding status "<status>"
-    Then  the status code of search request should be a 200
+    Then  the response for the status "<status>" should be "<jsonEmptyResponse>"
 
     Examples:
-      | status    | response |
-      | blablabla |   []     |
-      |  abcdefg  |  []     |
-      |  zxcvbnm  |   []     |
+      | status    | jsonEmptyResponse |
+      | blablabla | []  |
+      |  abcdefg  | []  |
+      |  zxcvbnm  | []  |

@@ -8,7 +8,7 @@ Feature: Add a new pet
     Given I set base URL for the request to the petstore
     And   I set endpoint to "/pet"
     And   I set header "accept" to value "application/json"
-    And   I set second header "Content-Type" to value "application/json"
+    And   I set header "Content-Type" to value "application/json"
     And   I set body with this information:
     """
     {
@@ -53,7 +53,7 @@ Feature: Add a new pet
     Given I set base URL for the request to the petstore
     And   I set endpoint to "/pet"
     And   I set header "accept" to value "application/json"
-    And   I set second header "Content-Type" to value "application/json"
+    And   I set header "Content-Type" to value "application/json"
     And   I set body with this information:
     """
     {

@@ -27,6 +27,7 @@ dependencies {
     compile 'net.serenity-bdd:serenity-cucumber:1.9.12'
     compile 'org.json:json:20170516'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+    testImplementation 'io.rest-assured:json-schema-validator:4.1.2'
 }
 
 // Allow build to continue on test failure

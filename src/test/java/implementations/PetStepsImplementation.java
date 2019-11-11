@@ -7,8 +7,11 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static io.restassured.path.json.JsonPath.from;
 
 public class PetStepsImplementation {
 
@@ -40,7 +43,7 @@ public class PetStepsImplementation {
 
     public void setHeaderToValue(String headerName, String headerValue) {
         requestSpecification.header(headerName, headerValue);
-    }
+            }
 
     public void setBody(String requestBody) {
         requestSpecification.body(requestBody);
@@ -92,10 +95,22 @@ public class PetStepsImplementation {
     public void searchPetsByStatus(String status) {
         String getEndPoint ="/pet/findByStatus?status="+status;
         response = PetStoreApiServices.executeRequest(requestSpecification, "GET", getEndPoint);
+        String respuesta1 = response.asString();
+        /*if(!respuesta1.equals("[]")) {
+            List<String> petNames = from(respuesta1).getList("pet.name");
+            System.out.println("El tamaño del array de nombres es: "+petNames.get(1));
+        }*/
         int actualStatusCode = response.getStatusCode();
         Assert.assertEquals(200, actualStatusCode);
 
     }
 
 
+    public void checkEmptyResponse(String status, String jsonEmptyResponse) {
+        String getEndPoint ="/pet/findByStatus?status="+status;
+        response = PetStoreApiServices.executeRequest(requestSpecification, "GET", getEndPoint);
+        String responseInvalidStatus=response.asString();
+        Assert.assertEquals(jsonEmptyResponse, responseInvalidStatus);
+
+    }
 }
